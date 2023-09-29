@@ -1,16 +1,16 @@
 @font-face {
 	font-family: SFPROTR;
-	src: url(/assets/fonts/sf-pro-text_regular.ttf);
+	src: url(./assets/fonts/sf-pro-text_regular.ttf);
 }
 
 @font-face {
 	font-family: SFPROTB;
-	src: url(/assets/fonts/sf-pro-text_bold.ttf);
+	src: url(./assets/fonts/sf-pro-text_bold.ttf);
 }
 
 @font-face {
 	font-family: SFPROTSB;
-	src: url(/assets/fonts/sf-pro-display_semibold.ttf);
+	src: url(./assets/fonts/sf-pro-display_semibold.ttf);
 }
 
 * {
@@ -209,11 +209,10 @@ nav i {
 	background-color: #000000;
 }
 
-.page3 video {
-	width: 90%;
+.page3 img {
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: 10px 10px;
 }
 
 .page3_subtitle {
@@ -392,31 +391,31 @@ nav i {
 }
 
 .swiper-1 {
-	background-image: url(/assets/images/appletv1.jpg);
+	background-image: url(./assets/images/appletv1.jpg);
 }
 
 .swiper-2 {
-	background-image: url(/assets/images/appletv2.jpg);
+	background-image: url(./assets/images/appletv2.jpg);
 }
 
 .swiper-3 {
-	background-image: url(/assets/images/appletv3.jpg);
+	background-image: url(./assets/images/appletv3.jpg);
 }
 
 .swiper-4 {
-	background-image: url(/assets/images/appletv4.jpg);
+	background-image: url(./assets/images/appletv4.jpg);
 }
 
 .swiper-5 {
-	background-image: url(/assets/images/appletv5.jpg);
+	background-image: url(./assets/images/appletv5.jpg);
 }
 
 .swiper-6 {
-	background-image: url(/assets/images/appletv6.jpg);
+	background-image: url(./assets/images/appletv6.jpg);
 }
 
 .swiper-7 {
-	background-image: url(/assets/images/appletv7.jpg);
+	background-image: url(./assets/images/appletv7.jpg);
 }
 
 @media (max-width: 900px) {
