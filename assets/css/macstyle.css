@@ -1,0 +1,314 @@
+@font-face {
+	font-family: SFPRODR;
+	src: url(../fonts/sf-pro-display_regular.ttf);
+}
+
+@font-face {
+	font-family: SFPRODB;
+	src: url(../fonts/sf-pro-display_bold.ttf);
+}
+
+@font-face {
+	font-family: SFPRODSB;
+	src: url(../fonts/sf-pro-display_semibold.ttf);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: SFPRODR;
+}
+
+*::selection {
+	background-color: #000;
+	color: #C9BEAB;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#main {
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: 9vh;
+	z-index: 9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2.2vw;
+	backdrop-filter: blur(20px);
+	background-color: #ffffff;
+	border-bottom: .5px solid black;
+}
+
+nav a {
+	display: initial;
+	text-decoration: none;
+	color: #000000;
+	opacity: 0.5;
+	transition: all 300ms ease-in-out;
+	font-size: 1vw;
+	font-weight: 900;
+}
+
+nav a:hover {
+	color: #000000;
+	opacity: 1;
+}
+
+nav i {
+	font-size: 1.2vw;
+}
+
+.ri-menu-3-line {
+	display: none;
+}
+
+.responsive-nav {
+	display: none;
+}
+
+.tagline {
+	margin-top: 9vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 5vh;
+	background-color: #F5F5F7;
+}
+
+.tagline a {
+	text-decoration: none;
+	color: #0077ED;
+}
+
+.tagline a:hover {
+	border-bottom: 1px solid #0077ED;
+}
+
+.page1 {
+	position: relative;
+	width: 100%;
+	height: 86vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.page1 img {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: opacity 5s linear;
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: .25;
+	}
+
+	50% {
+		opacity: .50;
+	}
+
+	75% {
+		opacity: .75;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.page1 video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.page2 {
+	width: 100%;
+	height: 80vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	padding: 0 22.3vw;
+	gap: 2vw;
+	font-family: SFPRODB;
+}
+
+.heading {
+	font-size: 2.5vw;
+	animation: opacity1 5s linear;
+}
+
+@keyframes opacity1 {
+	0% {
+		opacity: .25;
+	}
+
+	50% {
+		opacity: .50;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.subtitle p {
+	font-size: 1.7vw;
+	color: #86868B;
+	font-weight: 700;
+}
+
+.subtitle span {
+	color: #000000;
+	font-weight: 700;
+}
+
+.description p {
+	font-size: 1.3vw;
+	color: #000000;
+	font-weight: 700;
+}
+
+.description span {
+	color: #BF4800;
+}
+
+.link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2vw;
+}
+
+.link a {
+	font-size: 1.1vw;
+	text-decoration: none;
+	color: #0077ED;
+}
+
+.link a:hover {
+	border-bottom: 1px solid #0077ED;
+}
+
+
+.page3 {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	padding: 0 22.3vw;
+	gap: 2vw;
+	position: relative;
+	font-family: SFPRODB;
+}
+
+.top-contant {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-direction: column;
+}
+
+.top-contant h1 {
+	font-size: 4vw;
+}
+
+.center-contant {
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-contant video {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 65vw;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.bottom-contant {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-direction: column;
+	margin-bottom: 1vw;
+}
+
+.bottom-contant p {
+	font-size: 1.4vw;
+	color: #86868B;
+	font-weight: 700;
+}
+
+.bottom-contant span {
+	color: #000000;
+	font-weight: 700;
+}
+
+.page4 {
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1vw;
+	margin: 0 2vw;
+}
+
+.page4_media,
+.page4_contant {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page4_media video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.page4_contant p {
+	font-size: 1.4vw;
+	color: #86868B;
+	font-weight: 700;
+	width: 90%;
+}
+
+.page4_contant span {
+	color: #000000;
+	font-weight: 700;
+}
