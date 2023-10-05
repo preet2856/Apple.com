@@ -1,23 +1,18 @@
 @font-face {
-	font-family: SFPROTR;
-	src: url(./assets/fonts/sf-pro-text_regular.ttf);
+	font-family: SFPRODR;
+	src: url(../fonts/sf-pro-display_regular.ttf);
 }
 
 @font-face {
-	font-family: SFPROTB;
-	src: url(./assets/fonts/sf-pro-text_bold.ttf);
-}
-
-@font-face {
-	font-family: SFPROTSB;
-	src: url(./assets/fonts/sf-pro-display_semibold.ttf);
+	font-family: SFPRODB;
+	src: url(../fonts/sf-pro-display_bold.ttf);
 }
 
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: SFPROTR;
+	font-family: 'SFPROR', Arial, sans-serif;
 }
 
 *::selection {
@@ -40,6 +35,8 @@ body {
 	height: 100vh;
 	overflow-x: hidden;
 }
+
+/* Navigation Start */
 
 nav {
 	width: 100%;
@@ -81,6 +78,8 @@ nav i:hover {
 	display: none;
 }
 
+/* Tagline Start */
+
 .tagline {
 	display: flex;
 	justify-content: center;
@@ -91,6 +90,7 @@ nav i:hover {
 }
 
 .tagline a {
+	font-family: "SFPRODB";
 	text-decoration: none;
 	color: #0077ED;
 }
@@ -99,6 +99,7 @@ nav i:hover {
 	border-bottom: 1px solid #0077ED;
 }
 
+/* Page 1 Start */
 
 .page1 {
 	position: relative;
@@ -157,6 +158,8 @@ nav i:hover {
 	border-bottom: 1px solid #0077ED;
 }
 
+/* Page 2 Start */
+
 .page2 {
 	position: relative;
 	display: flex;
@@ -167,31 +170,25 @@ nav i:hover {
 	background-color: #F5F5F7;
 }
 
-.page2 img {
+/* .page2 img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+} */
+
+.page2 video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 .page2_subtitle {
 	position: absolute;
 	color: #000000;
-	top: 20%;
+	bottom: 3%;
 	left: 50%;
 	transform: translateX(-50%);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: 1vw;
-}
-
-.page2_subtitle h1 {
-	font-size: 3.5vw;
-}
-
-.page2_subtitle p {
-	font-size: 2vw;
 }
 
 .page2_subtitle-link {
@@ -210,6 +207,8 @@ nav i:hover {
 .page2_subtitle-link a:hover {
 	border-bottom: 1px solid #0077ED;
 }
+
+/* Page 3 Start */
 
 .page3 {
 	position: relative;
@@ -244,6 +243,7 @@ nav i:hover {
 }
 
 .page3_subtitle h1 {
+	font-family: "SFPRODB";
 	font-size: 3.5vw;
 }
 
@@ -268,6 +268,8 @@ nav i:hover {
 	border-bottom: 1px solid #0077ED;
 }
 
+/* Page 4 Start */
+
 .page4 {
 	position: relative;
 	width: 100%;
@@ -283,7 +285,9 @@ nav i:hover {
 .box3,
 .box4,
 .box5,
-.box6 {
+.box6,
+.box7,
+.box8 {
 	position: relative;
 	width: 49%;
 	height: 75vh;
@@ -297,18 +301,13 @@ nav i:hover {
 .box3 img,
 .box4 img,
 .box5 img,
-.box6 img {
+.box6 img,
+.box7 img,
+.box8 img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-
-.box5 a {
-	height: 100%;
-	text-decoration: none;
-	color: #000000;
-}
-
 
 .page4_subtitle {
 	position: absolute;
@@ -328,6 +327,7 @@ nav i:hover {
 }
 
 .page4_subtitle h4 {
+	font-family: "SFPRODB";
 	font-size: 3vw;
 }
 
@@ -360,6 +360,24 @@ nav i:hover {
 	color: #C86225;
 	font-size: 1vw !important;
 }
+
+.box7_subtitle,
+.box8_subtitle {
+	color: #ffffff;
+}
+
+.box7_subtitle,
+.box8_subtitle {
+	font-family: "SFPRODB";
+}
+
+.box7_para {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* page 5 Start */
 
 .slider-page5 {
 	position: relative;
@@ -436,6 +454,56 @@ nav i:hover {
 .swiper-7 {
 	background-image: url(../images/appletv7.jpg);
 }
+
+/* Footer Start */
+
+.footer {
+	width: 100%;
+	height: 55vh;
+	padding: 2vw 22.3vw;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	gap: 1vw;
+	color: #999;
+}
+
+.footer p {
+	font-size: 0.8vw;
+	line-height: 1.2vw;
+}
+
+.footer span {
+	font-size: 0.8vw;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #999;
+}
+
+.footer:hover a {
+	color: #000;
+	border-bottom: 1px solid black;
+}
+
+.footer hr {
+	width: 100%;
+}
+
+.footer__btm {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1.2vw;
+}
+
+.footer__btm a {
+	font-size: 0.8vw;
+}
+
+/* Responsive Start */
 
 @media (max-width: 900px) {
 	.ri-apple-fill {
@@ -560,7 +628,9 @@ nav i:hover {
 	.box3,
 	.box4,
 	.box5,
-	.box6 {
+	.box6,
+	.box7,
+	.box8 {
 		width: 100%;
 		height: 75vh;
 	}
@@ -593,7 +663,7 @@ nav i:hover {
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
-	
+
 	#toggleButton {
 		color: #000;
 	}
@@ -603,9 +673,29 @@ nav i:hover {
 		bottom: 7%;
 		color: #C86225;
 	}
-	
+
 	#toggleButton i {
 		font-weight: 900;
 		font-size: 30px;
 	}
+
+	.footer {
+		height: 30vh;
+		padding: 3vw 5vw;
+		justify-content: start;
+	}
+
+	.footer p {
+		font-size: 2.1vw;
+		line-height: 2.1vw;
+	}
+
+	.footer span {
+		font-size: 1.8vw;
+	}
+
+	.footer__btm a {
+		font-size: 1.8vw;
+	}
+
 }
