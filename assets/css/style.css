@@ -121,7 +121,7 @@ nav i:hover {
 }
 
 .page1 video {
-	width: 90%;
+	width: 100%;
 	height: 100%;
 	object-fit: contain;
 	object-position: center;
@@ -514,7 +514,7 @@ nav i:hover {
 
 	.bi-list {
 		display: initial;
-		font-size: 5vw;
+		font-size: 6.5vw;
 	}
 
 	.responsive-nav {
@@ -630,16 +630,16 @@ nav i:hover {
 	}
 
 	.page4_subtitle h4 {
-		font-size: 5vw;
+		font-size: 6vw;
 		font-weight: 900;
 	}
 
 	.page4_subtitle p {
-		font-size: 3vw;
+		font-size: 4vw;
 	}
 
 	.page4_subtitle-link a {
-		font-size: 2vw;
+		font-size: 3vw;
 	}
 
 	.offer {
