@@ -1,5 +1,5 @@
-var menu = document.querySelector(".ri-menu-3-line");
-var close = document.querySelector(".ri-close-line");
+var menu = document.querySelector(".bi-list");
+var close = document.querySelector(".bi-x-lg");
 var nav = document.querySelector(".responsive-nav");
 
 menu.addEventListener("click", function () {
@@ -27,10 +27,10 @@ var isPlaying = true;
 toggleButton.addEventListener("click", function () {
 	if (isPlaying) {
 		swiper.autoplay.stop();
-		toggleButton.innerHTML = '<i class="ri-play-circle-line"></i>';
+		toggleButton.innerHTML = '<i class="bi bi-play-circle"></i>';
 	} else {
 		swiper.autoplay.start();
-		toggleButton.innerHTML = '<i class="ri-pause-circle-line"></i>';
+		toggleButton.innerHTML = '<i class="bi bi-pause-circle"></i>';
 	}
 
 	isPlaying = !isPlaying;
